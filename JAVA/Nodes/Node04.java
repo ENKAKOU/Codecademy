@@ -1,4 +1,4 @@
-public class Node03 {
+public class Node04 {
 
     public String data;
     private Node next;
@@ -17,10 +17,6 @@ public class Node03 {
     }
 
     public static void main(String[] args) {
-        Node firstNode = new Node("I am the first Node!");
-        Node secondNode = new Node("I am the second Node!");
-        firstNode.setNextNode(secondNode);
-        System.out.println(firstNode.getNextNode().data);
 
     }
 }
