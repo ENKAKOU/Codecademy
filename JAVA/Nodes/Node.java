@@ -12,6 +12,6 @@ public class Node {
         Node firstNode = new Node("I am a Node!");
         System.out.println(firstNode.data);
         System.out.println(firstNode.next);
-    }
 
+    }
 }
