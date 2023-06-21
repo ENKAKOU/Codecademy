@@ -1,4 +1,8 @@
-public class LinkedList02 {
+public class LinkedList_06 {
+
+    public static void main(String []args) {
+
+    }
 
     public Node head;
 
@@ -27,7 +31,25 @@ public class LinkedList02 {
         }
     }
 
-    public static void main(String []args) {
+    public String removeHead() {
+        Node removedHead = this.head;
+        if (removedHead == null) {
+            return null;
+        }
+        this.head = removedHead.getNextNode();
+        return removedHead.data;
+    }
+
+    public String printList() {
+        String output = "<head> ";
+        Node currentNode = this.head;
+        while (currentNode != null) {
+            output += currentNode.data + " ";
+            currentNode = currentNode.getNextNode();
+        }
+        output += "<tail>";
+        System.out.println(output);
+        return output;
 
     }
 }
