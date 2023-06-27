@@ -24,7 +24,8 @@ public class MinHeap06 {
         if (this.size == 0) {
             throw new Error("Heap is empty!");
         }
-        System.out.println("Swap min element " + this.heap.get(1) + " and last element " + this.heap.get(this.size));
+        System.out.println("Swap min element " + this.heap.get(1) +
+                " and last element " + this.heap.get(this.size));
         this.swap(1, this.size);
         int min = this.heap.remove(this.size);
         System.out.println("Removed from the heap: " + min);
@@ -35,8 +36,10 @@ public class MinHeap06 {
 
     private void bubbleUp() {
         int current = this.size;
-        while (current > 1 && this.heap.get(current) < this.heap.get(this.getParent(current))) {
-            System.out.println("Swap index " + current + " with index " + this.getParent(current));
+        while (current > 1 && this.heap.get(current) <
+                this.heap.get(this.getParent(current))) {
+            System.out.println("Swap index " + current + " with index " +
+                    this.getParent(current));
             System.out.println(this.heap);
             this.swap(current, this.getParent(current));
             current = this.getParent(current);
