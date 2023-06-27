@@ -23,7 +23,8 @@ public class MinHeap08 {
         if (this.size == 0) {
             throw new Error("Heap is empty!");
         }
-        System.out.println("Swap min element " + this.heap.get(1) + " and last element " + this.heap.get(this.size));
+        System.out.println("Swap min element " + this.heap.get(1) +
+                " and last element " + this.heap.get(this.size));
         this.swap(1, this.size);
         int min = this.heap.remove(this.size);
         System.out.println("Removed from the heap: " + min);
@@ -35,8 +36,10 @@ public class MinHeap08 {
 
     private void bubbleUp() {
         int current = this.size;
-        while (current > 1 && this.heap.get(this.getParent(current)) > this.heap.get(current)) {
-            System.out.println("Swap index " + current + " with index " + this.getParent(current));
+        while (current > 1 && this.heap.get(this.getParent(current)) >
+                this.heap.get(current)) {
+            System.out.println("Swap index " + current + " with index " +
+                    this.getParent(current));
             System.out.println(this.heap);
             this.swap(current, this.getParent(current));
             current = this.getParent(current);
@@ -76,8 +79,10 @@ public class MinHeap08 {
     }
 
     private boolean canSwap(int current, int leftChild, int rightChild) {
-        return (this.exists(leftChild) && (this.heap.get(current) > this.heap.get(leftChild)))
-                || (this.exists(rightChild) && (this.heap.get(current) > this.heap.get(rightChild)));
+        return (this.exists(leftChild) && (this.heap.get(current) >
+                this.heap.get(leftChild)))
+                || (this.exists(rightChild) && (this.heap.get(current) >
+                this.heap.get(rightChild)));
     }
 
     public int getParent(int current) {
