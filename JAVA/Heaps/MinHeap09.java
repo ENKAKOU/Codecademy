@@ -110,7 +110,7 @@ public class MinHeap09 {
         for (int i = 10000; i >= 1; i--) {
             minHeap.add(i);
         }
-        // Remove minimum value from minHeap
+
         System.out.println("Removing the minimum value...");
         System.out.println("Minimum value: " + minHeap.popMin());
 
