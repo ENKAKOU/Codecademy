@@ -43,7 +43,7 @@ public class Car06 implements Serializable {
             IOException, ClassNotFoundException {
         Car toyota = new Car("Toyota", 2021);
         Car honda = new Car("Honda", 2020);
-        
+
         FileOutputStream fileOutputStream = new FileOutputStream("cars.txt");
         ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
         objectOutputStream.writeObject(toyota);
