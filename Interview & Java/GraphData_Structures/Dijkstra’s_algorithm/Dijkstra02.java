@@ -53,5 +53,6 @@ public class Dijkstra02 {
         testGraph.addEdge(e, g, -50);
 
         dijkstraResultPrinter(dijkstra(testGraph, a));
+        
     }
 }

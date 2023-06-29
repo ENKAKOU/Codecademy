@@ -64,5 +64,6 @@ public class Dijkstra03 {
         testGraph.addEdge(e, g, -50);
 
         dijkstraResultPrinter(dijkstra(testGraph, a));
+
     }
 }

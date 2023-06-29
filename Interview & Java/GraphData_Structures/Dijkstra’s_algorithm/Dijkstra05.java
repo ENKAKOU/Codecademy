@@ -91,5 +91,6 @@ public class Dijkstra05 {
         testGraph.addEdge(e, g, -50);
 
         shortestPathBetween(testGraph, a, g);
+
     }
 }

@@ -92,5 +92,6 @@ public class Dijkstra06 {
 
         dijkstraResultPrinter(dijkstra(testGraph, a));
         shortestPathBetween(testGraph, a, g);
+
     }
 }
