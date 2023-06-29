@@ -1,15 +1,15 @@
-// Test imports
+
 import org.junit.Test;
 import org.junit.After;
 import org.junit.Before;
 import static org.junit.Assert.fail;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.equalTo;
-// File imports
+
 import java.io.File;
 import java.io.FileWriter;
 import java.util.Scanner;
-// Possible exceptions to detect
+
 import java.io.IOException;
 
 public class TestExample02 {

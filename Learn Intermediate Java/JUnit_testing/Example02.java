@@ -1,5 +1,5 @@
 public class Example02 {
-    // Constructor
+
     public Example() {
     }
 
