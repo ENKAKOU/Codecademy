@@ -39,5 +39,6 @@ class GraphTraverser05 {
         visitedVertices.add(startingVertex);
 
         GraphTraverser.breadthFirstTraversal(startingVertex, visitedVertices);
+        
     }
 }

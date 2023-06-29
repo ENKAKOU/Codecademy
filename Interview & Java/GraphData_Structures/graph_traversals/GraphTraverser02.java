@@ -21,5 +21,6 @@ class GraphTraverser02 {
         visitedVertices.add(startingVertex);
 
         GraphTraverser.depthFirstTraversal(startingVertex, visitedVertices);
+
     }
 }
