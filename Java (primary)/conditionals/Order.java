@@ -8,6 +8,5 @@ public class Order {
             System.out.println("High value item!");
 
         }
-
     }
 }

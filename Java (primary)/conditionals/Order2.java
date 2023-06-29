@@ -4,7 +4,5 @@ public class Order2 {
 
         boolean isFilled = false;
 
-        // Write an if-then-else statement:
-
     }
 }
