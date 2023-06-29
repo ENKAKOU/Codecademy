@@ -1,4 +1,5 @@
 public class Order03 {
+
     boolean isFilled;
     double billAmount;
     String shipping;
