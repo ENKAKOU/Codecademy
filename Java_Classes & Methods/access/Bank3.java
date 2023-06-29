@@ -1,5 +1,3 @@
-package java_english.access;
-
 public class Bank3 {
     private CheckingAccount accountOne;
     private CheckingAccount accountTwo;

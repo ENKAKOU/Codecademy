@@ -1,5 +1,3 @@
-package java_english.access;
-
 public class SavingsAccount{
 
     public String owner;

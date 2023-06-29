@@ -1,5 +1,3 @@
-package java_english.access;
-
 public class ATM3 {
     public static int totalMoney = 0;
     public static int numATMs = 0;

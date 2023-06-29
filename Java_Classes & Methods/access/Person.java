@@ -1,5 +1,3 @@
-package java_english.access;
-
 public class Person{
     public int age;
     public int wisdom;
