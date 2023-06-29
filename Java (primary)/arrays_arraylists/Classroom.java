@@ -1,5 +1,3 @@
-package java_english.arrays_arraylists;
-
 public class Classroom {
 
     public static void main(String[] args){

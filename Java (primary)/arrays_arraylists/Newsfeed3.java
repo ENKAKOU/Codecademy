@@ -1,5 +1,3 @@
-package java_english.arrays_arraylists;
-// import the Arrays package here:
 import java.util.Arrays;
 
 public class Newsfeed3 {

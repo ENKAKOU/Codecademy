@@ -1,5 +1,3 @@
-package java_english.arrays_arraylists;
-
 public class Newsfeed {
 
     String[] trendingArticles;
