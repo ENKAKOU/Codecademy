@@ -1,5 +1,3 @@
-package java_english.hello;
-
 public class Mess {
 
     public static void main(String[] args) {
@@ -8,5 +6,6 @@ public class Mess {
         char genre = 'C';
         double runtime = 1.58;
         boolean isPG = true;
+
     }
 }

@@ -1,5 +1,3 @@
-package java_english.variables;
-
 public class BankAccount {
 
     public static void main(String[] args){

@@ -1,5 +1,3 @@
-package java_english.hello;
-
 public class MyProfile {
 
     public static void main(String[] args) {
@@ -8,5 +6,6 @@ public class MyProfile {
         double desiredSalary = 80000.00;
         char gender = 'f';
         boolean lookingForJob = true;
+
     }
 }
