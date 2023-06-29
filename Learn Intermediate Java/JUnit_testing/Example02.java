@@ -9,5 +9,6 @@ public class Example02 {
             result *= i;
         }
         return result;
+
     }
 }
