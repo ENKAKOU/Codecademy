@@ -1,4 +1,4 @@
-public class Order4 {
+public class Order04 {
 
     boolean isFilled;
     double billAmount;

@@ -1,11 +1,11 @@
-public class Reservation5 {
+public class Reservation04 {
 
     int guestCount;
     int restaurantCapacity;
     boolean isRestaurantOpen;
     boolean isConfirmed;
 
-    public Reservation5(int count, int capacity, boolean open) {
+    public Reservation(int count, int capacity, boolean open) {
         if (count < 1 || count > 8) {
             System.out.println("Invalid reservation!");
         }
@@ -25,14 +25,15 @@ public class Reservation5 {
     }
 
     public void informUser() {
-        if (!isConfirmed) {
-            System.out.println("Unable to confirm reservation, please contact restaurant.");
-        } else {
-            System.out.println("Please enjoy your meal!");
-        }
+
     }
 
     public static void main(String[] args) {
-
+        Reservation partyOfThree = new Reservation(3, 12, true);
+        Reservation partyOfFour = new Reservation(4, 3, true);
+        partyOfThree.confirmReservation();
+        partyOfThree.informUser();
+        partyOfFour.confirmReservation();
+        partyOfFour.informUser();
     }
 }

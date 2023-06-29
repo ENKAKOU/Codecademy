@@ -1,18 +1,24 @@
-public class Reservation2 {
+public class Reservation03 {
 
     int guestCount;
     int restaurantCapacity;
     boolean isRestaurantOpen;
     boolean isConfirmed;
 
-    public Reservation2(int count, int capacity, boolean open) {
+    public Reservation(int count, int capacity, boolean open) {
         guestCount = count;
         restaurantCapacity = capacity;
         isRestaurantOpen = open;
     }
 
     public void confirmReservation() {
-
+        if (restaurantCapacity >= guestCount && isRestaurantOpen) {
+            System.out.println("Reservation confirmed");
+            isConfirmed = true;
+        } else {
+            System.out.println("Reservation denied");
+            isConfirmed = false;
+        }
     }
 
     public void informUser() {
@@ -26,6 +32,5 @@ public class Reservation2 {
         partyOfThree.informUser();
         partyOfFour.confirmReservation();
         partyOfFour.informUser();
-
     }
 }

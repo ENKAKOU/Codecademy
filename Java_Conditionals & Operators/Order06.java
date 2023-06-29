@@ -1,12 +1,14 @@
-public class Order5 {
+public class Order06 {
 
     boolean isFilled;
     double billAmount;
     String shipping;
 
-    public Order5(boolean filled, double cost, String shippingMethod) {
+    public Order(boolean filled, double cost, String shippingMethod) {
         if (cost > 24.00) {
             System.out.println("High value item!");
+        } else {
+            System.out.println("Low value item!");
         }
         isFilled = filled;
         billAmount = cost;
@@ -16,17 +18,19 @@ public class Order5 {
     public void ship() {
         if (isFilled) {
             System.out.println("Shipping");
-            System.out.println("Shipping cost: " + calculateShipping());
         } else {
             System.out.println("Order not ready");
         }
+
+        double shippingCost = calculateShipping();
+
+        System.out.println("Shipping cost: ");
+        System.out.println(shippingCost);
     }
 
     public double calculateShipping() {
         double shippingCost;
-
         switch (shipping) {
-
             case "Regular":
                 shippingCost = 0;
                 break;
@@ -36,15 +40,11 @@ public class Order5 {
             default:
                 shippingCost = .50;
         }
-
         return shippingCost;
     }
 
     public static void main(String[] args) {
-        Order5 book = new Order5(true, 9.99, "Express");
-        Order5 chemistrySet = new Order5(false, 72.50, "Regular");
+        // create instances and call methods here!
 
-        book.ship();
-        chemistrySet.ship();
     }
 }

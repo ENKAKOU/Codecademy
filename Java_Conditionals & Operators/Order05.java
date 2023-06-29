@@ -1,10 +1,10 @@
-public class Order3 {
+public class Order05 {
 
     boolean isFilled;
     double billAmount;
     String shipping;
 
-    public Order3(boolean filled, double cost, String shippingMethod) {
+    public Order(boolean filled, double cost, String shippingMethod) {
         if (cost > 24.00) {
             System.out.println("High value item!");
         }
@@ -23,23 +23,19 @@ public class Order3 {
     }
 
     public double calculateShipping() {
-        // declare conditional statement here
-        if (shipping.equals("Regular")) {
-            return 0;
-        } else if (shipping.equals("Express")) {
-            return 1.75;
-        } else {
-            return .50;
-        }
+        double shippingCost;
+        // declare switch statement here
+
+
+        return shippingCost;
     }
 
     public static void main(String[] args) {
         // do not alter the main method!
-        Order3 book = new Order3(true, 9.99, "Express");
-        Order3 chemistrySet = new Order3(false, 72.50, "Regular");
+        Order book = new Order(true, 9.99, "Express");
+        Order chemistrySet = new Order(false, 72.50, "Regular");
 
         book.ship();
         chemistrySet.ship();
     }
 }
-
