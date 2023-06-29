@@ -1,5 +1,3 @@
-package java_english.conditionals;
-
 public class Reservation {
 
     int guestCount;

@@ -1,5 +1,3 @@
-package java_english.conditionals;
-
 public class Order2 {
 
     public static void main(String[] args) {
