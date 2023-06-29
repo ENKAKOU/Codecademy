@@ -1,5 +1,3 @@
-package java_english.tow_dimensional;
-
 import java.util.Arrays;
 
 public class Combining {

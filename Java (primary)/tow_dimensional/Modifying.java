@@ -1,5 +1,3 @@
-package java_english.tow_dimensional;
-
 import java.util.Arrays;
 
 public class Modifying {
@@ -12,6 +10,6 @@ public class Modifying {
                 {9, 8, 7, 6, 5}
         };
 
-        //System.out.println(Arrays.deepToString(subMatrix));
+//        System.out.println(Arrays.deepToString(subMatrix));
     }
 }

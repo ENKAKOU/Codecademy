@@ -1,5 +1,3 @@
-package java_english.loops;
-
 class Numbers {
 
     public static void main(String[] args) {

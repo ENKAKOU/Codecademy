@@ -1,5 +1,3 @@
-package java_english.debugging;
-
 import java.lang.Math;
 
 class Fortune {

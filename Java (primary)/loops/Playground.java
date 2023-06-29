@@ -1,5 +1,3 @@
-package java_english.loops;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -11,5 +9,4 @@ class Playground {
             System.out.println("Congrats on finishing Java loops!");
         }
     }
-
 }

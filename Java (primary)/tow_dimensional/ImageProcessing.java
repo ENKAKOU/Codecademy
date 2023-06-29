@@ -1,5 +1,3 @@
-package java_english.tow_dimensional;
-
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.File;

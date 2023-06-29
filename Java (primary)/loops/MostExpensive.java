@@ -1,5 +1,3 @@
-package java_english.loops;
-
 import java.util.ArrayList;
 
 class MostExpensive {

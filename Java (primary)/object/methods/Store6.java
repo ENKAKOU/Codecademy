@@ -1,5 +1,3 @@
-package java_english.object_java.methods;
-
 public class Store6 {
 
     String productType;

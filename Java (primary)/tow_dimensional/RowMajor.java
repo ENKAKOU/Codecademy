@@ -1,5 +1,3 @@
-package java_english.tow_dimensional;
-
 public class RowMajor {
 
     public static void main(String[] args) {
