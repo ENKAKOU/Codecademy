@@ -1,5 +1,3 @@
-package java_english.lnheritance;
-
 class Noodle2 {
 
     double lengthInCentimeters;

@@ -1,5 +1,3 @@
-package java_english.lnheritance;
-
 class Dinner {
 
     private void makeNoodles(Noodle noodle, String sauce) {
