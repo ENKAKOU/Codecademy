@@ -1,5 +1,3 @@
-package java_english.object_oriednted_java;
-
 public class Store4 {
 
     String productType;

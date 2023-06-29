@@ -1,8 +1,5 @@
-package java_english.object_oriednted_java;
-
 public class Store3 {
 
-    // new method: constructor!
     public Store3() {
         System.out.println("I am inside the constructor method.");
     }

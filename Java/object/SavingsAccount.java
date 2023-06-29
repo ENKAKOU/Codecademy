@@ -1,5 +1,3 @@
-package java_english.object_oriednted_java;
-
 public class SavingsAccount {
     int balance;
 
