@@ -1,5 +1,3 @@
-package java_english.recursion;
-
 public class Factoria2 {
 
     public static int recursiveFactorial(int n) {

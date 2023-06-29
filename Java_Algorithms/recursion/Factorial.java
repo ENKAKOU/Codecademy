@@ -1,5 +1,3 @@
-package java_english.recursion;
-
 public class Factorial {
 
     public static int iterativeFactorial(int n) {

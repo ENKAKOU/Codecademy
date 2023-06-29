@@ -1,5 +1,3 @@
-package java_english.searching;
-
 import java.util.Arrays;
 
 class InsertionSort3 {
