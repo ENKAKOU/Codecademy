@@ -48,5 +48,6 @@ public class Graph02 {
         trainNetwork.removeVertex(atlantaStation);
 
         trainNetwork.print();
+
     }
 }

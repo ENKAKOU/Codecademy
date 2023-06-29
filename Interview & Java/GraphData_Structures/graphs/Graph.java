@@ -42,5 +42,6 @@ public class Graph {
         Vertex newYorkStation = trainNetwork.addVertex("New York");
 
         trainNetwork.print();
+
     }
 }

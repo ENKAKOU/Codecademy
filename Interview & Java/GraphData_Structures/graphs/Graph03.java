@@ -67,5 +67,6 @@ public class Graph03 {
         trainNetwork.addEdge(atlantaStation, newYorkStation, 800);
 
         trainNetwork.print();
+
     }
 }

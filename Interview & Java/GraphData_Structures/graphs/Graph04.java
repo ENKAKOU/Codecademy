@@ -76,9 +76,9 @@ public class Graph04 {
         Vertex newYorkStation = trainNetwork.addVertex("New York");
 
         trainNetwork.addEdge(atlantaStation, newYorkStation, 800);
-
         trainNetwork.removeEdge(atlantaStation, newYorkStation);
 
         trainNetwork.print();
+
     }
 }
