@@ -10,6 +10,5 @@ public class SubtractionFun {
         double num1 = 3;
         double num2 = 1;
         int difference = new SubtractionFun().subtractValues(num1, num2);
-
     }
 }

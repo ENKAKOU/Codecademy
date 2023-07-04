@@ -9,6 +9,5 @@ public class SubtractionFun02 {
         double num1 = 1;
         double num2 = 2;
         int difference = new SubtractionFun().subtractValues(num1, num2);
-
     }
 }
