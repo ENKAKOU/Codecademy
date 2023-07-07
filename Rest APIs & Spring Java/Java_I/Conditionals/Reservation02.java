@@ -9,6 +9,7 @@ public class Reservation02 {
         guestCount = count;
         restaurantCapacity = capacity;
         isRestaurantOpen = open;
+
     }
 
     public void confirmReservation() {
@@ -17,6 +18,7 @@ public class Reservation02 {
 
     public void informUser() {
         System.out.println("Please enjoy your meal!");
+
     }
 
     public static void main(String[] args) {
