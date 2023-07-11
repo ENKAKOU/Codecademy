@@ -50,7 +50,9 @@ public class RestaurantController03 {
 
         validateZipCode(restaurant.getZipCode());
 
-        Optional<Restaurant> existingRestaurant = restaurantRepository.findRestaurantsByNameAndZipCode(restaurant.getName(), restaurant.getZipCode());
+        Optional<Restaurant> existingRestaurant = restaurantRepository.
+                findRestaurantsByNameAndZipCode(restaurant.getName(),
+                        restaurant.getZipCode());
         if (existingRestaurant.isPresent()) {
             throw new ResponseStatusException(HttpStatus.CONFLICT);
         }
