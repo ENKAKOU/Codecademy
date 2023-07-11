@@ -18,5 +18,9 @@ class NoodleRestaurant {
         NoodleRestaurant customer1 = new NoodleRestaurant("Sagirah");
         NoodleRestaurant customer2 = new NoodleRestaurant("Maritza");
 
+        // Add your code here
+        customer1.order(pho);
+        customer2.order(ramen);
+
     }
 }
