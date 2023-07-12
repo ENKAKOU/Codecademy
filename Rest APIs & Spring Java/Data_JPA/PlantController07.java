@@ -77,6 +77,6 @@ public class PlantController07 {
         Plant plantToDelete = plantToDeleteOptional.get();
         this.plantRepository.delete(plantToDelete);
         return plantToDelete;
-        
+
     }
 }
