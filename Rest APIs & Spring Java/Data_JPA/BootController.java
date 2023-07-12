@@ -58,54 +58,70 @@ public class BootController {
 
     @GetMapping("/search")
     public List<Boot> searchBoots(@RequestParam(required = false) String material,
-                                  @RequestParam(required = false) BootType type, @RequestParam(required = false) Float size,
-                                  @RequestParam(required = false, name = "quantity") Integer minQuantity) throws QueryNotSupportedException {
+                                  @RequestParam(required = false) BootType type,
+                                  @RequestParam(required = false) Float size,
+                                  @RequestParam(required = false, name = "quantity")
+                                              Integer minQuantity) throws QueryNotSupportedException {
+
         if (Objects.nonNull(material)) {
             if (Objects.nonNull(type) && Objects.nonNull(size) && Objects.nonNull(minQuantity)) {
                 // call the repository method that accepts a material, type, size, and minimum
                 // quantity
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             } else if (Objects.nonNull(type) && Objects.nonNull(size)) {
                 // call the repository method that accepts a material, size, and type
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             } else if (Objects.nonNull(type) && Objects.nonNull(minQuantity)) {
                 // call the repository method that accepts a material, a type, and a minimum
                 // quantity
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             } else if (Objects.nonNull(type)) {
                 // call the repository method that accepts a material and a type
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             } else {
                 // call the repository method that accepts only a material
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             }
         } else if (Objects.nonNull(type)) {
             if (Objects.nonNull(size) && Objects.nonNull(minQuantity)) {
                 // call the repository method that accepts a type, size, and minimum quantity
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             } else if (Objects.nonNull(size)) {
                 // call the repository method that accepts a type and a size
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             } else if (Objects.nonNull(minQuantity)) {
                 // call the repository method that accepts a type and a minimum quantity
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             } else {
                 // call the repository method that accept only a type
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             }
         } else if (Objects.nonNull(size)) {
             if (Objects.nonNull(minQuantity)) {
                 // call the repository method that accepts a size and a minimum quantity
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             } else {
                 // call the repository method that accepts only a size
-                throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+                throw new QueryNotSupportedException("This query is not supported! Try " +
+                        "a different combination of search parameters.");
             }
         } else if (Objects.nonNull(minQuantity)) {
             // call the repository method that accepts only a minimum quantity
-            throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+            throw new QueryNotSupportedException("This query is not supported! Try " +
+                    "a different combination of search parameters.");
         } else {
-            throw new QueryNotSupportedException("This query is not supported! Try a different combination of search parameters.");
+            throw new QueryNotSupportedException("This query is not supported! Try " +
+                    "a different combination of search parameters.");
         }
     }
 
