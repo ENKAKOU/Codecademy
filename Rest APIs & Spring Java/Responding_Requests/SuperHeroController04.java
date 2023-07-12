@@ -18,7 +18,7 @@ public class SuperHeroController04 {
     private final SuperHeroRepository superHeroRepository;
     private final SuperReportRepository superReportRepository;
 
-    public SuperHeroController(SuperHeroRepository superHeroRepository,
+    public SuperHeroController04(SuperHeroRepository superHeroRepository,
                                SuperReportRepository superReportRepository) {
         this.superHeroRepository = superHeroRepository;
         this.superReportRepository = superReportRepository;

@@ -22,7 +22,7 @@ public class SuperHeroController06 {
     private final SuperHeroRepository superHeroRepository;
     private final SuperReportRepository superReportRepository;
 
-    public SuperHeroController(SuperHeroRepository superHeroRepository,
+    public SuperHeroController06(SuperHeroRepository superHeroRepository,
                                SuperReportRepository superReportRepository) {
         this.superHeroRepository = superHeroRepository;
         this.superReportRepository = superReportRepository;
