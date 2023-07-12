@@ -63,5 +63,6 @@ public class RestaurantController {
         if (!zipCodePattern.matcher(zipcode).matches()) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
         }
+        
     }
 }

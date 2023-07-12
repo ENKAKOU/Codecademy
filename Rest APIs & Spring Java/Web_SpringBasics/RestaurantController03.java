@@ -16,7 +16,7 @@ public class RestaurantController03 {
     private final RestaurantRepository restaurantRepository;
     private final Pattern zipCodePattern = Pattern.compile("\\d{5}");
 
-    public RestaurantController(RestaurantRepository restaurantRepository) {
+    public RestaurantController03(RestaurantRepository restaurantRepository) {
         this.restaurantRepository = restaurantRepository;
     }
 
@@ -62,5 +62,6 @@ public class RestaurantController03 {
         if (!zipCodePattern.matcher(zipcode).matches()) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST);
         }
+
     }
 }
