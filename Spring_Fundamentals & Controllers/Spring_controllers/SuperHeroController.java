@@ -41,7 +41,9 @@ public class SuperHeroController {
     }
 
     @PostMapping(path="/help")
-    public String postHelp(@RequestParam String postalCode, @RequestParam String streetAddress) {
+    public String postHelp(@RequestParam String postalCode,
+                           @RequestParam String streetAddress) {
+
         SuperReport newSuperReport = new SuperReport(postalCode, streetAddress, "");
         superReportRepository.save(newSuperReport);
         return "Thanks! Super Heroes have been dispatched to your location!";
@@ -55,6 +57,7 @@ public class SuperHeroController {
 
     @PostMapping(path="/{postalCode}")
     public Iterable<SuperReport> getHeroReportByPostal(@PathVariable String postalCode) {
+
         Iterable<SuperReport> superReport = superReportRepository.findByPostalCode(postalCode);
         return superReport;
 
