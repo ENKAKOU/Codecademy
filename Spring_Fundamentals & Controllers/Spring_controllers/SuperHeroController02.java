@@ -21,7 +21,7 @@ public class SuperHeroController02 {
 
     @RequestMapping("/superHeroes")
     public Iterable<SuperHero> getSuperHeros() {
-        
+
         Iterable<SuperHero> superHeroes = superHeroRepository.findAll();
         return superHeroes;
 
