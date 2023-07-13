@@ -14,7 +14,9 @@ public class SuperHeroController03 {
     private final SuperHeroRepository superHeroRepository;
     private final SuperReportRepository superReportRepository;
 
-    public SuperHeroController03(SuperHeroRepository superHeroRepository, SuperReportRepository superReportRepository) {
+    public SuperHeroController03(SuperHeroRepository superHeroRepository,
+                                 SuperReportRepository superReportRepository) {
+        
         this.superHeroRepository = superHeroRepository;
         this.superReportRepository = superReportRepository;
     }
@@ -23,6 +25,6 @@ public class SuperHeroController03 {
     public Iterable<SuperHero> getSuperHeros() {
         Iterable<SuperHero> superHeroes = superHeroRepository.findAll();
         return superHeroes;
-    }
 
+    }
 }
