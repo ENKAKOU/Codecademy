@@ -24,7 +24,6 @@ public class SuperHeroController02 {
     public Iterable<SuperHero> getSuperHeros() {
 
         Iterable<SuperHero> superHeroes = superHeroRepository.findAll();
-
         return superHeroes;
 
     }

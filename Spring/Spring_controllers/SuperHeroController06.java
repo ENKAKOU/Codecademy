@@ -29,7 +29,6 @@ public class SuperHeroController06 {
     @GetMapping()
     public Iterable<SuperHero> getSuperHeros() {
         Iterable<SuperHero> superHeroes = superHeroRepository.findAll();
-
         return superHeroes;
     }
 
@@ -40,7 +39,6 @@ public class SuperHeroController06 {
 
         SuperHero newSuperHero = new SuperHero(firstName, lastName, superPower);
         superHeroRepository.save(newSuperHero);
-
         return "New Super Hero successfully added!";
     }
 
@@ -49,14 +47,12 @@ public class SuperHeroController06 {
 
         SuperReport newSuperReport = new SuperReport(postalCode, streetAddress, "");
         superReportRepository.save(newSuperReport);
-
         return "Thanks! Super Heroes have been dispatched to your location!";
     }
 
     @GetMapping(path="/heroReport")
     public Iterable<SuperReport> getHeroReport() {
         Iterable<SuperReport> superReport = superReportRepository.findAll();
-
         return superReport;
     }
 
@@ -64,7 +60,6 @@ public class SuperHeroController06 {
     public Iterable<SuperReport> getHeroReportByPostal(@PathVariable String postalCode) {
 
         Iterable<SuperReport> superReport = superReportRepository.findByPostalCode(postalCode);
-
         return superReport;
     }
 }

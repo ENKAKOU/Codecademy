@@ -29,14 +29,12 @@ public class SuperHeroController04 {
     @GetMapping()
     public Iterable<SuperHero> getSuperHeros() {
         Iterable<SuperHero> superHeroes = superHeroRepository.findAll();
-
         return superHeroes;
     }
 
     @GetMapping("/heroReport")
     public Iterable<SuperReport> getHeroReport() {
         Iterable<SuperReport> superReport = superReportRepository.findAll();
-
         return superReport;
     }
 
@@ -47,7 +45,6 @@ public class SuperHeroController04 {
 
         SuperHero newSuperHero = new SuperHero(firstName, lastName, superPower);
         superHeroRepository.save(newSuperHero);
-
         return "New Super Hero successfully added!";
 
     }

@@ -17,7 +17,9 @@ public class SuperHeroController05 {
     private final SuperHeroRepository superHeroRepository;
     private final SuperReportRepository superReportRepository;
 
-    public SuperHeroController05(SuperHeroRepository superHeroRepository, SuperReportRepository superReportRepository) {
+    public SuperHeroController05(SuperHeroRepository superHeroRepository,
+                                 SuperReportRepository superReportRepository) {
+
         this.superHeroRepository = superHeroRepository;
         this.superReportRepository = superReportRepository;
     }
@@ -25,7 +27,6 @@ public class SuperHeroController05 {
     @GetMapping()
     public Iterable<SuperHero> getSuperHeros() {
         Iterable<SuperHero> superHeroes = superHeroRepository.findAll();
-
         return superHeroes;
     }
 
@@ -36,7 +37,6 @@ public class SuperHeroController05 {
     ) {
         SuperHero newSuperHero = new SuperHero(firstName, lastName, superPower);
         superHeroRepository.save(newSuperHero);
-
         return "New Super Hero successfully added!";
     }
 
@@ -45,9 +45,9 @@ public class SuperHeroController05 {
             @RequestParam String postalCode,
             @RequestParam String streetAddress
     ) {
+
         SuperReport newSuperReport = new SuperReport(postalCode, streetAddress, "");
         superReportRepository.save(newSuperReport);
-
         return "Thanks! Super Heroes have been dispatched to your location!";
     }
 }
