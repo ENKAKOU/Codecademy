@@ -29,12 +29,14 @@ public class SuperHeroController07 {
     @GetMapping()
     public Iterable<SuperHero> getSuperHeros() {
         Iterable<SuperHero> superHeroes = superHeroRepository.findAll();
+
         return superHeroes;
     }
 
     @PostMapping(path="/addNew")
     public String createNewSuperHero(@RequestBody SuperHero superHero) {
         superHeroRepository.save(superHero);
+
         return "New Super Hero successfully added!";
     }
 
@@ -43,12 +45,14 @@ public class SuperHeroController07 {
 
         SuperReport newSuperReport = new SuperReport(postalCode, streetAddress, "");
         superReportRepository.save(newSuperReport);
+
         return "Thanks! Super Heroes have been dispatched to your location!";
     }
 
     @GetMapping(path="/heroReport")
     public Iterable<SuperReport> getHeroReport() {
         Iterable<SuperReport> superReport = superReportRepository.findAll();
+
         return superReport;
     }
 
@@ -56,6 +60,7 @@ public class SuperHeroController07 {
     public Iterable<SuperReport> getHeroReportByPostal(@PathVariable String postalCode) {
 
         Iterable<SuperReport> superReport = superReportRepository.findByPostalCode(postalCode);
+
         return superReport;
     }
 }
