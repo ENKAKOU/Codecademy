@@ -6,6 +6,8 @@ public class Classroom {
         mathScores[0] = 94.5;
         mathScores[2] = 76.8;
 
-        System.out.println("The number of students in the class is " + students.length + ".");
+        System.out.println("The number of students in the class is "
+                + students.length + ".");
+
     }
 }

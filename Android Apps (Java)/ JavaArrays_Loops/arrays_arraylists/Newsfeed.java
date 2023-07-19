@@ -40,6 +40,7 @@ public class Newsfeed {
 
         robotTimes.viewArticle(2);
         robotTimes.viewArticle(2);
+        
         System.out.println("The top article is " + robotTimes.getTopArticle());
         robotTimes.changeRating(3, 5);
 

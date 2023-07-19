@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 public class Newsfeed6 {
-
     String[] topics = {"Opinion", "Tech", "Science", "Health"};
     int[] views = {0, 0, 0, 0};
 

@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
 public class Newsfeed7 {
-
     String[] topics;
 
     public Newsfeed7(String[] initialTopics) {

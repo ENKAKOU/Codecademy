@@ -43,6 +43,8 @@ public class Newsfeed4 {
         sampleFeed.viewTopic(2);
         sampleFeed.viewTopic(1);
 
-        System.out.println("The " + sampleFeed.topics[1] + " topic has been viewed " + sampleFeed.views[1] + " times!");
+        System.out.println("The " + sampleFeed.topics[1] +
+                " topic has been viewed " + sampleFeed.views[1] + " times!");
+
     }
 }

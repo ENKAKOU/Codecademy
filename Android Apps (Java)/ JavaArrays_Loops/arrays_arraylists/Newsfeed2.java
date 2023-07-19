@@ -12,6 +12,7 @@ public class Newsfeed2 {
     public static void main(String[] args){
         Newsfeed sampleFeed = new Newsfeed();
         String[] topics = sampleFeed.getTopics();
+
         System.out.println(topics);
 
     }

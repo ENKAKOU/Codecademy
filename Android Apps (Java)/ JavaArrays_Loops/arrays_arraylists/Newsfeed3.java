@@ -14,6 +14,7 @@ public class Newsfeed3 {
     public static void main(String[] args){
         Newsfeed sampleFeed = new Newsfeed();
         String[] topics = sampleFeed.getTopics();
+
         System.out.println(Arrays.toString(topics));
 
     }
