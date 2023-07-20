@@ -1,7 +1,6 @@
 class Coffee {
 
     public static void main(String[] args) {
-
         int cupsOfCoffee = 1;
         while (cupsOfCoffee <= 100) {
 

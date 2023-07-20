@@ -16,7 +16,6 @@ class MostExpensive {
                 mostExpensive = expense;
             }
         }
-
         System.out.println(mostExpensive);
 
     }
