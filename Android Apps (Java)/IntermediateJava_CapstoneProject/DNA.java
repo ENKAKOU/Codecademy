@@ -9,7 +9,7 @@ public class DNA {
     public static void main(String[] args) {
         DNA dnaObject = new DNA();
         int length = dnaObject.dna.length();
-        
+
         System.out.println("Length: " + length);
 
 // -. .-. .-. .-. .
